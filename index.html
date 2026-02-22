@@ -12,9 +12,40 @@
 
 </head>
 <body>
+    <header>
+        <h1>Paint and Flooring Calculator</h1>
+    </header>
+
+    <main>
+        <div class="data">
+            <label>Room Width </label><input type="number" id="width"> feet
+            <label>Room Depth </label><input type="number" id="depth"> feet
+            <label>Wall Height </label><input type="number" id="height"> feet
+            Paint Quality <select id="quality">
+                <option value="" disabled selected>Select an paint quality</option>
+                <option value="600">Premium</option>
+                <option value="500">Standard</option>
+                <option value="400">Economy</option>
+            </select>
+            <button id="calculate">Calculate</button>
+        </div>
+
+        <section>
+            <div>
+                <h2>Paint Supplies</h2>
+                <ul id="paint"></ul>
+            </div>
+<div>
+                <h2>Carpet Supplies</h2>
+                <ul id="carpet"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Ashton Walden &bull; Project 4: Home Improvement &bull; DWDD-1720 Spring 2026</p>
+    </footer>
     
-
-
     <script src="js/scripts.js"></script>
 </body>
 </html>
