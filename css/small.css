@@ -4,3 +4,117 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root {
+    font-family: 'josefin Sans', sans-serif;
+    --primaryColor: #0F172A;
+    --primaryLight: #1E293B;
+
+    --accent: #3B82F6;
+    --accent-hover: #2563EB;
+
+    --text-main: #F8FAFC;
+    --text-muted: #94A3B8;
+
+    --surface: #ffffff;
+    --surface-soft: #f1f5f9;
+}
+
+body {
+    background-color: var(--primaryColor);
+    margin: 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 2%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--accent);
+    background-color: var(--primaryLight);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+.data {
+    margin: 1rem 4%;
+    padding: 1rem 4%;
+    background-color: var(--surface);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25), 0 0 0 1px rgba(59,130,246,0.15);
+}
+
+.data label {
+    display: block;
+    margin: .5rem 0;
+    color: var(--primaryColor);
+}
+
+.data input {
+    width: 60px;
+    padding: 0.25rem;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
+
+.data button {
+    width: 100%;
+    padding: .5rem 0;
+    margin: 1rem 0;
+    background: rgb(96,88,235);
+    background: linear-gradient(to bottom, var(--accent), var(--accent-hover));
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(37,99,235,0.4);
+    transition: all 0.25s ease;
+    font-weight: 600;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+
+.data button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(37,99,235,0.55);
+
+    background: linear-gradient(to bottom, #60A5FA, var(--accent));
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div {
+    margin: 1rem 4%;
+    flex-basis: 96%;
+    background-color: var(--surface-soft);
+    border-radius: 0 0 10px 10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+}
+
+section h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: .5rem 0;
+    background-color: var(--primaryLight);
+    color: var(--text-main);
+    border-radius: 12px 12px 0 0;
+}
+
+section ul {
+    list-style-type: circle;
+    pad: 0.8rem 1.5rem;
+    color: var(--primaryColor);
+}
+
+footer {
+    background-color: var(--primaryLight);
+    padding: 1rem 2%;
+    color: var(--text-muted);
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
